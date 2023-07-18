@@ -65,8 +65,8 @@ _A list of my commonly used Git commands_
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
-#### Delete Past Commits History if any error arises 
-## Remove all the past commits in main branch and keeping the files in a new orphan branch later renaming it to main branch
+### Delete Past Commits History if any error arises 
+#### Remove all the past commits in main branch and keeping the files in a new orphan branch later renaming it to main branch
 
 | Command | Description |
 | ------- | ----------- |
@@ -77,5 +77,5 @@ _A list of my commonly used Git commands_
 | `git branch -m main` | Rename current branch to 'main' |
 | `git push -f origin main` | Push & Finish |
 
-## Gitignore specifies the patterns of files and directories that won't be tracked by git
-## Typically to avoid / untrack outputs, data, binaries, packages, env files etc. being checked in
+### Gitignore specifies the patterns of files and directories that won't be tracked by git
+#### Typically to avoid / untrack outputs, data, binaries, packages, env files etc. being checked in
