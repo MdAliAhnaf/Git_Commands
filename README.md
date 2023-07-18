@@ -56,6 +56,14 @@ _A list of my commonly used Git commands_
 | `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
+### Push an existing repo in the Main branch
+
+| Command | Description |
+| ------- | ----------- |
+| `git remote add origin [ssh://git@github.com/[username]/[repository-name].git]` | Add a remote repository |
+| `git branch -M main` | Rename current branch to 'main' |
+| `git push -u origin main` | Push changes to remote repository (and remember the branch) |
+
 ### Inspection & Comparison
 
 | Command | Description |
@@ -71,11 +79,23 @@ _A list of my commonly used Git commands_
 | Command | Description |
 | ------- | ----------- |
 | `git checkout --orphan` | Create a New branch of the Current / Main / Master Branch |
-| `git add .` | use this in to access root directory (only) |
-| `git commit -m "commit message your message here / deleted "` | Commit changes & name |
+| `git add .` | Use this to access root directory (ONLY) |
+| `git commit -m "[commit message your message here as example: deleted]"` | Commit changes & name |
 | `git branch -D main` | Delete main branch |
 | `git branch -m main` | Rename current branch to 'main' |
 | `git push -f origin main` | Push & Finish |
 
 ### Gitignore specifies the patterns of files and directories that won't be tracked by git
-#### Typically to avoid / untrack outputs, data, binaries, packages, env files etc. being checked in
+#### Typically to avoid and untrack directory files, outputs, data, binaries, Distribution / packaging-packages, installer/installer logs, dll files, extensions, env files etc. being checked in
+
+### Git LFS (Large File Storage)
+
+| Command | Description |
+| ------- | ----------- |
+| `git lfs install` | Download and install the Git command line extension |
+| `git lfs track "*.resources"` | Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes) Example: tracking resources|
+| `git add .gitattributes` | Now make sure .gitattributes is tracked |
+| `git status` | To make sure check status in which branch you are currently in |
+| `git add [file-name.txt]` | Add a file to the staging area (Example: git add . ) . all the files in root directory or file.psd / file-name.txt |
+| `git commit -m "Add Files"` | Commit changes; Here Add Files is a message of that commit|
+| `git push origin main` | Push a branch to your main branch;if your current branch is named main |
