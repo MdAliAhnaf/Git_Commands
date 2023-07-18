@@ -95,8 +95,7 @@ ___
 | Command | Description |
 | ------- | ----------- |
 | `touch .gitignore` | Creating a file mainly gitignore |
-| Save this in the gitignore file | Description |
-| ------- | ----------- |
+| Save this in the gitignore file | <p align="center"> Description </p> |
 | `personal/ [and in next line] something.js` | For instance exlude personal folder and something.js hence this file won't be tracked in our version control system|
 
 ### Git LFS (Large File Storage)
