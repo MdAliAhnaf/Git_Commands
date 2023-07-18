@@ -9,6 +9,7 @@ _A list of my commonly used Git commands_
 
 | Command | Description |
 | ------- | ----------- |
+| `pwd` | Current Working Directory |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
@@ -63,3 +64,18 @@ _A list of my commonly used Git commands_
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+#### Delete Past Commits History if any error arises 
+## Remove all the past commits in main branch and keeping the files in a new orphan branch later renaming it to main branch
+
+| Command | Description |
+| ------- | ----------- |
+| `git checkout --orphan` | Create a New branch of the Current / Main / Master Branch |
+| `git add .` | use this in to access root directory (only) |
+| `git commit -m "commit message your message here / deleted "` | Commit changes & name |
+| `git branch -D main` | Delete main branch |
+| `git branch -m main` | Rename current branch to 'main' |
+| `git push -f origin main` | Push & Finish |
+
+## Gitignore specifies the patterns of files and directories that won't be tracked by git
+## Typically to avoid / untrack outputs, data, binaries, packages, env files etc. being checked in
