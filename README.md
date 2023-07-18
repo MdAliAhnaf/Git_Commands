@@ -1,8 +1,9 @@
-Git Commands
+Git Commands 
 ============
 ___
-
-_A list of my commonly used Git commands_
+<p align="center">
+_A list of my commonly used Git(distributed version control system) commands_
+</p>
 --
 
 ### Getting & Creating Projects
@@ -21,6 +22,8 @@ _A list of my commonly used Git commands_
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
+| `mkdir personal` | Make a new directory in the current working directory (personal folder) |
+| `touch new_file.js` | Creating new files in the current working directory |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
 
 ### Branching & Merging
@@ -88,14 +91,20 @@ _A list of my commonly used Git commands_
 ### Gitignore specifies the patterns of files and directories that won't be tracked by git
 #### Typically to avoid and untrack directory files, outputs, data, binaries, Distribution / packaging-packages, installer/installer logs, dll files, extensions, env files etc. being checked in.
 
+| Command | Description |
+| ------- | ----------- |
+| `touch .gitignore` | Creating a file mainly gitignore |
+| Save this in the gitignore file | Description |
+| `personal/ [and in next line] something.js` | For instance exlude personal folder and something.js hence this file won't be tracked in our version control system|
+
 ### Git LFS (Large File Storage)
 
 | Command | Description |
 | ------- | ----------- |
 | `git lfs install` | Download and install the Git command line extension |
-| `git lfs track "*.resources"` | Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes) Example: tracking resources|
+| `git lfs track "*.resources"` | Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes) Example: tracking *.resources (tracking all files with resources as extension) |
 | `git add .gitattributes` | Now make sure .gitattributes is tracked |
 | `git status` | To make sure check status in which branch you are currently in |
 | `git add [file-name.txt]` | Add a file to the staging area (Example: git add . ) . all the files in root directory or for instance file.psd / file-name.txt |
-| `git commit -m "Add Files"` | Commit changes; Here Add Files is a message of that commit|
-| `git push origin main` | Push a branch to your main branch;if your current branch is named main |
+| `git commit -m "Add Files"` | Commit changes; Here Add Files is a message of that commit |
+| `git push origin main` | Push a branch to your main branch; if your current branch is named main |
