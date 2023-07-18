@@ -1,10 +1,8 @@
 Git Commands 
 ============
 ___
-<p align="center">
-<b><i>_A list of my commonly used Git(distributed version control system) commands_</i></b>
-</p>
 
+_A list of my commonly used Git(distributed version control system)commands_
 --
 
 ### Getting & Creating Projects
