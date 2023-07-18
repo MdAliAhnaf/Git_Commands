@@ -86,7 +86,7 @@ _A list of my commonly used Git commands_
 | `git push -f origin main` | Push & Finish |
 
 ### Gitignore specifies the patterns of files and directories that won't be tracked by git
-#### Typically to avoid and untrack directory files, outputs, data, binaries, Distribution / packaging-packages, installer/installer logs, dll files, extensions, env files etc. being checked in
+#### Typically to avoid and untrack directory files, outputs, data, binaries, Distribution / packaging-packages, installer/installer logs, dll files, extensions, env files etc. being checked in.
 
 ### Git LFS (Large File Storage)
 
@@ -96,6 +96,6 @@ _A list of my commonly used Git commands_
 | `git lfs track "*.resources"` | Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes) Example: tracking resources|
 | `git add .gitattributes` | Now make sure .gitattributes is tracked |
 | `git status` | To make sure check status in which branch you are currently in |
-| `git add [file-name.txt]` | Add a file to the staging area (Example: git add . ) . all the files in root directory or file.psd / file-name.txt |
+| `git add [file-name.txt]` | Add a file to the staging area (Example: git add . ) . all the files in root directory or for instance file.psd / file-name.txt |
 | `git commit -m "Add Files"` | Commit changes; Here Add Files is a message of that commit|
 | `git push origin main` | Push a branch to your main branch;if your current branch is named main |
